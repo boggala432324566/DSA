@@ -15,4 +15,5 @@ func BitWiseOperators() {
 	fmt.Println("Bitwise XOR:", x^y)
 	fmt.Println("Bitwise Left Shift:", x<<1)
 	fmt.Println("Bitwise Right Shift:", x>>1)
+	fmt.Println("Bitwise AND NOT:", y&^x)
 }
