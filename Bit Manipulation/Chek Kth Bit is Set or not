@@ -1,0 +1,17 @@
+package main
+
+import (
+	"fmt"	
+)
+
+func main() {	
+	CheckKthBitIsSetOrNot(5, 3)
+}
+
+func CheckKthBitIsSetOrNot(n, k int) {
+	if n&(1<<(k-1)) != 0 {
+		fmt.Println("yes")
+	} else {
+		fmt.Println("No")
+	}
+}
