@@ -8,7 +8,6 @@ func main() {
 	CountSetBits(7)
 }
 
-
 func CountSetBits(n int) {
 	count := 0
 	for n != 0 {
