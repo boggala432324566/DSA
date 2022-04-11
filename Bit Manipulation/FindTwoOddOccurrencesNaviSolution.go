@@ -5,10 +5,10 @@ import (
 )
 
 func main() {	
-	FindOddOccurrence()
+	FindTwoOddOccurrences()
 }
 
-func FindOddOccurrence() {
+func FindTwoOddOccurrences() {
 	var arr = []int32{2, 2, 3, 9, 5, 5, 6, 6, 7, 7, 7, 7}
 	for i := 0; i < len(arr); i++ {
 		count := 0
