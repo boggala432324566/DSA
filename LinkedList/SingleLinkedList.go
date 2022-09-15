@@ -43,10 +43,17 @@ func main() {
 	linkedList.AddNode(2)
 	linkedList.AddNode(3)
 	linkedList.AddNode(4)
-	linkedList.AddNode(5)
+	linkedList.AddNode(1)
+	//linkedList.head.next.next.next.next = linkedList.head.next
 	//linkedList.DeleteGivenNode(linkedList.head.next.next)
 	//linkedList.FindMiddleElement()
 	//linkedList.DeleteGivenNodeFromEnd(2)
-	linkedList.ReverseLinkedList()
-	linkedList.PrintLinkedList()
+	//linkedList.ReverseLinkedList()
+	//linkedList.PrintLinkedList()
+	//linkedList.DetectCycle()
+	//linkedList.CycleLength()
+	//linkedList.palindrome()
+	node := linkedList.GetNode(6)
+	node.next = linkedList.head.next
+	linkedList.IntersectionPoint(node)
 }
