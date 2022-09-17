@@ -39,11 +39,11 @@ func (l *LinkedList) PrintLinkedList() {
 
 func main() {
 	linkedList := &LinkedList{}
-	linkedList.AddNode(1)
-	linkedList.AddNode(2)
-	linkedList.AddNode(3)
-	linkedList.AddNode(4)
-	linkedList.AddNode(1)
+	linkedList.AddNode(6)
+	linkedList.AddNode(10)
+	linkedList.AddNode(15)
+	linkedList.AddNode(20)
+	linkedList.AddNode(21)
 	//linkedList.head.next.next.next.next = linkedList.head.next
 	//linkedList.DeleteGivenNode(linkedList.head.next.next)
 	//linkedList.FindMiddleElement()
@@ -53,7 +53,8 @@ func main() {
 	//linkedList.DetectCycle()
 	//linkedList.CycleLength()
 	//linkedList.palindrome()
-	node := linkedList.GetNode(6)
-	node.next = linkedList.head.next
-	linkedList.IntersectionPoint(node)
+	//node := linkedList.GetNode(4)
+	//node.next = linkedList.GetNode(13)
+	//node.next.next = linkedList.GetNode(50)
+	linkedList.MergeLinkedList(nil)
 }
