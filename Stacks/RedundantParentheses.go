@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func (s *Stack) redundantParentheses() {
-	input := "(((a+b)+c)"
+	input := "(((a+b)+c))"
 	isRedundant := s.checkRedundantParentheses(input)
 	fmt.Println(isRedundant)
 
@@ -28,7 +28,7 @@ func (s *Stack) checkRedundantParentheses(input string) bool {
 			}
 		}
 	}
-	if s.isEmpty() {
+	if s.isEmpty() && op == 0 {
 		return true
 	}
 	return false
