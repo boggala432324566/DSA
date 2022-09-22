@@ -4,11 +4,11 @@ import "fmt"
 
 func main() {
 	var arr = [4][4]int{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}}
-	index := grideSearch(arr, 15)
+	index := gridSearch(arr, 15)
 	fmt.Printf("Number of ele:%d\n", index)
 }
 
-func grideSearch(arr [4][4]int, k int) int {
+func gridSearch(arr [4][4]int, k int) int {
 	if len(arr) == 0 {
 		return -1
 	}
