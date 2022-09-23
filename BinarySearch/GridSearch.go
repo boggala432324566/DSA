@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	var arr = [4][4]int{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}}
 	index := gridSearch(arr, 15)
-	fmt.Printf("Number of ele:%d\n", index)
+	fmt.Printf("Grid Element:%d\n", index)
 }
 
 func gridSearch(arr [4][4]int, k int) int {
