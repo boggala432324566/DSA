@@ -9,6 +9,7 @@ type TreeNode struct {
 type BinaryTree struct {
 	root  *TreeNode
 	queue Queue
+	stack Stack
 }
 
 func (t *BinaryTree) GetNode(value int) *TreeNode {
@@ -28,5 +29,11 @@ func main() {
 	binaryTree.root.left.left = binaryTree.GetNode(20)
 	binaryTree.root.left.right = binaryTree.GetNode(21)
 	binaryTree.root.right.left = binaryTree.GetNode(34)
-	binaryTree.LevelOrderTraversal()
+	//binaryTree.LevelOrderTraversal()
+	//binaryTree.PreorderTraversalRecursion(binaryTree.root)
+	//binaryTree.InorderTraversalRecursion(binaryTree.root)
+	//binaryTree.PostorderTraversalRecursion(binaryTree.root)
+	//binaryTree.PreorderTraversalIterative(binaryTree.root)
+	//binaryTree.InorderTraversalIterative(binaryTree.root)
+	binaryTree.PostorderTraversalIterative(binaryTree.root)
 }

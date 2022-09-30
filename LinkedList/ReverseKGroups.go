@@ -1,17 +1,24 @@
 package main
 
-func (l *LinkedList) reverseList() {
+func (l *LinkedList) reverseByGroupOfK(head *Node, length int, k int) *Node {
+	if length < k {
+		return head
+	}
 	prev := &Node{}
+	nxt := &Node{}
 	prev = nil
+	nxt = nil
 	curr := l.head
-	nxt := l.head.next
-
-	for nxt != nil {
+	count := 0
+	for nxt != nil && count < k {
+		nxt = curr.next
 		curr.next = prev
 		prev = curr
 		curr = nxt
-		nxt = nxt.next
+		count++
 	}
-	curr.next = prev
-	l.head = curr
+	if nxt != nil {
+		head.next = l.reverseByGroupOfK(nxt, length-k, k)
+	}
+	return prev
 }

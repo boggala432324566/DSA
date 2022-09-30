@@ -41,9 +41,13 @@ func main() {
 	linkedList := &LinkedList{}
 	//linkedList.AddNode(6)
 	linkedList.AddNode(10)
-	linkedList.AddNode(10)
-	linkedList.AddNode(10)
-	//linkedList.AddNode(21)
+	linkedList.AddNode(20)
+	linkedList.AddNode(30)
+	linkedList.AddNode(21)
+	linkedList.AddNode(50)
+	linkedList.AddNode(70)
+	linkedList.AddNode(90)
+	linkedList.AddNode(61)
 	//linkedList.head.next.next.next.next = linkedList.head.next
 	//linkedList.DeleteGivenNode(linkedList.head.next.next)
 	//linkedList.FindMiddleElement()
@@ -58,6 +62,7 @@ func main() {
 	//node.next.next = linkedList.GetNode(50)
 	//linkedList.MergeLinkedList(nil)
 	//linkedList.AlternateLinkedListNodes()
-	linkedList.RemoveDuplicatesInSortedLinkedList()
+	//linkedList.RemoveDuplicatesInSortedLinkedList()
+	linkedList.reverseByGroupOfK(linkedList.head, 8, 3)
 	linkedList.PrintLinkedList()
 }
