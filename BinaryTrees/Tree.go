@@ -35,5 +35,6 @@ func main() {
 	//binaryTree.PostorderTraversalRecursion(binaryTree.root)
 	//binaryTree.PreorderTraversalIterative(binaryTree.root)
 	//binaryTree.InorderTraversalIterative(binaryTree.root)
-	binaryTree.PostorderTraversalIterative(binaryTree.root)
+	//binaryTree.PostorderTraversalIterative(binaryTree.root)
+	binaryTree.VerticalOrderTraversal(binaryTree.root)
 }
