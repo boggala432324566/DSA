@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 type Stack struct {
 	stack []string
 }
@@ -25,24 +23,4 @@ func (s *Stack) size() int {
 
 func (s *Stack) isEmpty() bool {
 	return len(s.stack) == 0
-}
-
-func main() {
-	s := Stack{}
-	//s.push("2")
-	//s.push("5")
-	//s.push("7")
-	//s.push("8")
-	//s.push("3")
-	//s.push("9")
-	//s.pop()
-	//s.pop()
-	//fmt.Println(s.peek())
-	//fmt.Println(s.size())
-	//s.balancedParentheses()
-	//s.redundantParentheses()
-	s.StackPush("2")
-	s.StackPush("5")
-	fmt.Printf("hello")
-	fmt.Println(s.StackPop())
 }

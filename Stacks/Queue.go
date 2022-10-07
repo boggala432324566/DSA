@@ -1,10 +1,7 @@
 package main
 
-import "fmt"
-
 type Queue struct {
 	queue []string
-	Stack Stack
 }
 
 func (q *Queue) EnQueue(ele string) {
@@ -27,13 +24,4 @@ func (q *Queue) isEmpty() bool {
 
 func (q *Queue) Size() int {
 	return len(q.queue)
-}
-
-func main() {
-	q := Queue{}
-	q.EnQ("23")
-	q.EnQ("24")
-	q.EnQ("45")
-	fmt.Println(q.DeQ())
-	//q.SmallestNumberDividesDigits0ans9(111)
 }
