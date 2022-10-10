@@ -1,10 +1,11 @@
 package main
 
 import (
-	"fmt"	
+	"fmt"
+	"math"
 )
 
-func main() {	
+func main() {
 	ropeCutting := RopeCutting(23, 11, 9, 12)
 	fmt.Println("Num of Cuttings:", ropeCutting)
 }
