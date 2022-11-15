@@ -36,5 +36,22 @@ func main() {
 	//binaryTree.PreorderTraversalIterative(binaryTree.root)
 	//binaryTree.InorderTraversalIterative(binaryTree.root)
 	//binaryTree.PostorderTraversalIterative(binaryTree.root)
-	binaryTree.VerticalOrderTraversal(binaryTree.root)
+	//binaryTree.VerticalOrderTraversal(binaryTree.root)
+	//binaryTree.TreeHeight(binaryTree.root)
+	//binaryTree.CheckBalancedBinaryTree(binaryTree.root)
+	//binaryTree.TreeDiameter(binaryTree.root)
+	//binaryTree2 := &BinaryTree{queue: q}
+	//binaryTree2.root = binaryTree2.GetNode(6)
+	//binaryTree2.root.left = binaryTree2.GetNode(10)
+	//binaryTree2.root.right = binaryTree2.GetNode(15)
+	//binaryTree2.root.left.left = binaryTree2.GetNode(20)
+	//binaryTree2.root.left.right = binaryTree2.GetNode(21)
+	//binaryTree2.root.right.left = binaryTree2.GetNode(34)
+	//binaryTree.TreesAreIdentical(binaryTree.root, binaryTree2.root)
+	//binaryTree.TreeTopView(binaryTree.root)
+	//binaryTree.TreeButtomView(binaryTree.root)
+	//binaryTree.TreeRightView(binaryTree.root)
+	//binaryTree.TreeLeftView(binaryTree.root)
+	binaryTree.BoundaryTraversal(binaryTree.root)
+
 }
