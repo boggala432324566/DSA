@@ -26,9 +26,10 @@ func main() {
 	binaryTree.root = binaryTree.GetNode(6)
 	binaryTree.root.left = binaryTree.GetNode(10)
 	binaryTree.root.right = binaryTree.GetNode(15)
-	binaryTree.root.left.left = binaryTree.GetNode(20)
+	binaryTree.root.left.left = binaryTree.GetNode(27)
 	binaryTree.root.left.right = binaryTree.GetNode(21)
-	binaryTree.root.right.left = binaryTree.GetNode(34)
+	binaryTree.root.right.left = binaryTree.GetNode(29)
+	binaryTree.root.right.right = binaryTree.GetNode(20)
 	//binaryTree.LevelOrderTraversal()
 	//binaryTree.PreorderTraversalRecursion(binaryTree.root)
 	//binaryTree.InorderTraversalRecursion(binaryTree.root)
@@ -52,6 +53,7 @@ func main() {
 	//binaryTree.TreeButtomView(binaryTree.root)
 	//binaryTree.TreeRightView(binaryTree.root)
 	//binaryTree.TreeLeftView(binaryTree.root)
-	binaryTree.BoundaryTraversal(binaryTree.root)
-
+	//binaryTree.BoundaryTraversal(binaryTree.root)
+	//binaryTree.SymetricTree(binaryTree.root)
+	binaryTree.PrintRootToNodePath(binaryTree.root, 20)
 }
