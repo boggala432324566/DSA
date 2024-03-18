@@ -1,0 +1,31 @@
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+type job func()
+
+func worker(jobs <-chan job) {
+	for j := range jobs {
+		j()
+	}
+}
+
+func scheduleJob(jobs chan<- job, j job) {
+	jobs <- j
+
+}
+func main() {
+	jobs := make(chan job, 100)
+	go worker(jobs)
+	ticker := time.NewTicker(3 * time.Millisecond)
+	for i := 0; i < 10; i++ {
+		<-ticker.C
+		scheduleJob(jobs, func() {
+			fmt.Println("Job Done...")
+		})
+	}
+	ticker.Stop()
+}
